@@ -1,0 +1,251 @@
+body{
+	font-family: 'Montserrat', sans-serif;
+	overflow-x: hidden;
+	margin:none;
+}
+*{
+	box-sizing: border-box;
+}
+
+/* main */
+#main{
+	height: 900px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url('../img/main.jpg');
+	position: relative;
+	padding-bottom: 22px;
+	background-attachment: fixed;
+}
+#main::before{
+	content: '';
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.8);
+}
+#main .container, #main .row{
+	height: 100%;
+}
+h1{
+	color:#C1B3A1;
+	font-size: 200px;
+	position: relative;
+	font-weight: 600;
+	line-height: 180px;
+}
+.title-box{
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+.bottom-descr{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+.bottom-descr p{
+	font-weight: 400;
+	position: relative;
+	margin-bottom: 30px;
+	font-size: 20px;
+	line-height: 28px;
+	color: #727272;
+}
+header{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 10;
+	padding: 50px 0;
+}
+.shapka{
+	display: flex;
+	justify-content: space-between;
+	align-items: center
+}
+.header-nav{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	margin-left: 80px;
+}
+.header-nav li{
+	margin-right: 64px;
+}
+.header-nav a{
+	font-weight: 400;
+	font-size: 18px;
+	color: #FFFFFF;
+}
+.header-nav a:hover{
+	color: #727272;
+}
+.order-btn{
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 20px;
+	color: #fff;
+	border-radius: 50px;
+	padding: 6px 25px;
+	background-color: transparent;
+	border: 1px #fff solid;
+}
+.order-btn:hover{
+	background-color: #292128;
+	color: #fff;
+	border-color: #292128;
+}
+
+/* tours */
+#tours{
+	padding: 180px 0;
+}
+h2{
+	font-weight: 600;
+	font-size: 50px;
+	line-height: 50px;
+	text-transform: uppercase;
+	color: #000000;
+}
+.w-100{
+	width: 100%;
+}
+.tour-card{
+	margin-bottom: 30px;
+}
+.small-txt{
+	font-weight: 400;
+	transition: all .3s ease;
+	font-size: 12px;
+	line-height: 18px;
+	text-align: justify;
+	color: #000000;
+}
+.collapsed{
+	overflow: hidden;
+   display: -webkit-box;
+   -webkit-line-clamp: 2; /* number of lines to show */
+           line-clamp: 2; 
+   -webkit-box-orient: vertical;
+}
+h3{
+	font-weight: 600;
+	font-size: 30px;
+	line-height: 32px;
+	text-transform: uppercase;
+	color: #000000;
+	margin-bottom: 10px;
+	min-height: 64px;
+}
+.tour-card .order-btn{
+	color:#000;
+	border-color: #000;
+}
+.tour-card .order-btn:hover{
+	color: #fff;
+}
+/* 
+.tour-card .order-btn.dark{
+	color:#fff;
+	border-color: #000;
+	background-color: #000;
+}
+.tour-card .order-btn.dark:hover{
+	color: #000;
+	background-color: transparent;
+} */
+
+
+
+
+
+
+
+
+
+
+/*ADAPTIIIIIIIIIV*/
+
+.mb-16{
+	margin-bottom: 16px;
+}
+.mb-30{
+	margin-bottom: 32px;
+}
+
+@media (max-width: 1199px) {
+	
+}
+@media (max-width: 991px) {
+	
+}
+@media (max-width: 786px) {
+	
+}
+@media (max-width: 767px) {
+ 	
+}
+@media (max-width: 672px) {
+	
+}
+@media (max-width: 512px) {
+	
+}
+@media (max-width: 390px) {
+	
+}
+@media (max-width: 320px) {
+	
+}
+
+
+
+
+
+/* Remove outline on the forms and links */ 
+:active, :hover, :focus { 
+outline: 0; 
+outline-offset: 0; 
+}
+
+
+a{
+	text-decoration: none;
+	transition: all .3s ease;
+}
+button{
+	transition: all .3s ease;
+}
+a:hover{
+	text-decoration: none;
+}
+a:focus{
+	text-decoration: none;
+}
+
+
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+
