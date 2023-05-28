@@ -17,6 +17,8 @@
 </head>
 <body>
 
+	<div class="cursor"></div>
+
 <header>
 	<div class="container">
 		<div class="shapka">
@@ -51,6 +53,7 @@
 		</div>
 	</div>
 </section>
+
 
 <section id="tours">
 	<div class="container">
@@ -101,6 +104,84 @@
 	</div>
 </section>
 
+<section id="about">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<h2 class="mb-30">о нас </h2>
+			</div>
+			<div class="col-lg-6">
+				<div class="swiper swiper-container about-slider">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="about-slide" style="background-image: url('./img/about.png');">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="about-slide" style="background-image: url('./img/about.png');">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="about-slide" style="background-image: url('./img/about.png');">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="about-slide" style="background-image: url('./img/about.png');">
+							</div>
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<h3 class="mb-0">01</h3>
+				<h4 class="mb-24">Путешествие</h4>
+				<p class="small-grey mb-24">
+					Elementum lacus magnis et pulvinar. Dolor orci turpis et augue libero tellus. Quis aliquet quis ac molestie aliquam in in dis. Enim at ornare ullamcorper integer. Ullamcorper nunc malesuada vitae fames dolor. Enim cum eu, euismod quisque at. Elementum lacus magnis et pulvinar. Dolor orci turpis et augue libero tellus. Quis aliquet quis ac molestie aliquam in in dis. Enim at ornare ullamcorper integer. Ullamcorper nunc malesuada vitae fames dolor. 
+				</p>
+				<!--  -->
+				<h3 class="mb-0">02</h3>
+				<h4 class="mb-24">Гиды</h4>
+				<p class="small-grey mb-24">
+					Elementum lacus magnis et pulvinar. Dolor orci turpis et augue libero tellus. Quis aliquet quis ac molestie aliquam in in dis. Enim at ornare ullamcorper integer. Ullamcorper nunc malesuada vitae fames dolor. Enim cum eu, euismod quisque at. Elementum lacus magnis et pulvinar. Dolor orci turpis et augue libero tellus. Quis aliquet quis ac molestie aliquam in in dis. Enim at ornare ullamcorper integer. Ullamcorper nunc malesuada vitae fames dolor. 
+				</p>
+				<!--  -->
+				<h3 class="mb-0">03</h3>
+				<h4 class="mb-24">природа</h4>
+				<p class="small-grey mb-0">
+					Elementum lacus magnis et pulvinar. Dolor orci turpis et augue libero tellus. Quis aliquet quis ac molestie aliquam in in dis. Enim at ornare ullamcorper integer. Ullamcorper nunc malesuada vitae fames dolor. Enim cum eu, euismod quisque at. Elementum lacus magnis et pulvinar. Dolor orci turpis et augue libero tellus. Quis aliquet quis ac molestie aliquam in in dis. Enim at ornare ullamcorper integer. Ullamcorper nunc malesuada vitae fames dolor. 
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4">
+				<ul class="ms-0 justify-content-start header-nav">
+					<li><a href="">Туры</a></li>
+					<li><a href="">О нас</a></li>
+					<li><a href="">Галерея</a></li>
+				</ul>
+			</div>
+			<div class="col-lg-4 text-center">
+				<a href="" class="logo">
+					<img src="./img/logo.svg" alt="">
+				</a>
+			</div>
+			<div class="col-lg-4">
+				<ul class="ms-0 header-nav justify-content-end">
+					<li><a href="">Instagram</a></li>
+					<li class="me-0"><a href="">Tik Tok</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+
 
 
 
@@ -110,7 +191,7 @@
 <script src="js/main.js"></script>
 <script src="js/wow.min.js"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script src='https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js?ver=1.0.0'></script>
+<!-- <script src='https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js?ver=1.0.0'></script> -->
 
 
 <script>
@@ -124,16 +205,12 @@
 </script> -->
 
 <!-- Initialize Swiper -->
-  <!-- <script>
-  var swiper3 = new Swiper('.swiper-container', {
+  <script>
+  var swiper = new Swiper('.swiper-container', {
       slidesPerView: 1,
       spaceBetween: 0,
       loop: true,
       centeredSlides: true,
-      navigation: {
-        nextEl: '.nextBtn1',
-        prevEl: '.prevBtn1'
-      },
 	  pagination: {
 		el: '.swiper-pagination',
 		clickable: true
@@ -150,7 +227,7 @@
         },
       }
     });
-</script> -->
+</script>
 
 </body>
 </html>
