@@ -1,3 +1,5 @@
+// CARDS EVENTS
+
 const tour_card = document.querySelectorAll('.tour-card');
 
 console.log(tour_card)
@@ -17,7 +19,8 @@ tour_card.forEach((item) => {
     })
 })
 
-//  // CUSTOM CURSOR
+// CUSTOM CURSOR
+
 let clientX = -100;
 let clientY = -100;
 var innerCursor = document.querySelector(".cursor");
