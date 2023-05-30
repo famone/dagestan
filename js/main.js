@@ -21,29 +21,29 @@ tour_card.forEach((item) => {
 
 // CUSTOM CURSOR
 
-let clientX = -100;
-let clientY = -100;
-var innerCursor = document.querySelector(".cursor");
+// let clientX = -100;
+// let clientY = -100;
+// var innerCursor = document.querySelector(".cursor");
 
-const initCursor = ()=>{
-    document.addEventListener("mousemove", cursor);
-}
+// const initCursor = ()=>{
+//     document.addEventListener("mousemove", cursor);
+// }
 
-const disableCursor = ()=>{
-    document.removeEventListener("mousemove", cursor);
-}
+// const disableCursor = ()=>{
+//     document.removeEventListener("mousemove", cursor);
+// }
 
-function cursor(e) {
-    clientX = e.clientX;
-    clientY = e.clientY;
-}
-const render = ()=>{
+// function cursor(e) {
+//     clientX = e.clientX;
+//     clientY = e.clientY;
+// }
+// const render = ()=>{
 
-    innerCursor.style.top = clientY + 'px';
-    innerCursor.style.left = clientX + 'px';
+//     innerCursor.style.top = clientY + 'px';
+//     innerCursor.style.left = clientX + 'px';
 
-    requestAnimationFrame(render);
-};
+//     requestAnimationFrame(render);
+// };
 
-initCursor();
-requestAnimationFrame(render);
+// initCursor();
+// requestAnimationFrame(render);

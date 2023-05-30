@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>yahts</title>
+	<title>dgstn</title>
 	<script src="https://cdn.jsdelivr.net/npm/vue@2.7.8/dist/vue.js"></script>
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
@@ -17,7 +17,7 @@
 </head>
 <body>
 
-	<div class="cursor"></div>
+	<!-- <div class="cursor"></div> -->
 
 <header>
 	<div class="container">
@@ -26,13 +26,13 @@
 				<a href="" class="logo">
 					<img src="./img/logo.svg" alt="">
 				</a>
-				<ul class="header-nav">
+				<ul class="header-nav d-none d-lg-flex">
 					<li><a href="">Туры</a></li>
 					<li><a href="">О нас</a></li>
 					<li><a href="">Галерея</a></li>
 				</ul>
 			</div>
-			<button class="order-btn">ЗАКАЗАТЬ ТУР</button>
+			<button class="order-btn d-none d-lg-block">ЗАКАЗАТЬ ТУР</button>
 		</div>
 	</div>
 </header>
@@ -45,7 +45,7 @@
 				<div class="title-box">
 					<h1>ДАГЕСТАН</h1>
 					<div class="bottom-descr">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing <br> elit. Nisl facilisis integer tortor malesuada nulla risus. </p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing <br class="d-none d-lg-block"> elit. Nisl facilisis integer tortor malesuada nulla risus. </p>
 						<h1 class="text-end">ТУРЫ</h1>
 					</div>
 				</div>
@@ -61,7 +61,7 @@
 			<div class="col-lg-12">
 				<h2 class="mb-30">Туры</h2>
 			</div>
-			<div class="col-lg-4">
+			<div class="col-lg-4 col-sm-6">
 				<div class="tour-card">
 					<img class="w-100 mb-16" src="./img/Rectangle1.jpg" alt="">
 					<h3>Тур с местным гидом-водителем</h3>
@@ -74,7 +74,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-4">
+			<div class="col-lg-4 col-sm-6">
 				<div class="tour-card">
 					<img class="w-100 mb-16" src="./img/Rectangle2.jpg" alt="">
 					<h3>Авторский тур от Ольги Нагваль</h3>
@@ -87,7 +87,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-4">
+			<div class="col-lg-4 col-sm-6">
 				<div class="tour-card">
 					<img class="w-100 mb-16" src="./img/Rectangle3.jpg" alt="">
 					<h3>тур ретрит</h3>
@@ -156,6 +156,152 @@
 	</div>
 </section>
 
+<section id="gallery">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<h2 class="mb-30">Галерея</h2>
+			</div>
+		</div>
+	</div>
+	<div class="swiper swiper-container gallery-slider">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<div class="gallery-slide" style="background-image: url('./img/g1.jpg');">
+					<div class="labels">
+						<span>Горные замки</span>
+						<span>Горные реки</span>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="gallery-slide" style="background-image: url('./img/g2.jpg');">
+					<div class="labels">
+						<span>Горные замки</span>
+						<span>Горные реки</span>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="gallery-slide" style="background-image: url('./img/g3.jpg');">
+					<div class="labels">
+						<span>Горные замки</span>
+						<span>Горные реки</span>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="gallery-slide" style="background-image: url('./img/g1.jpg');">
+					<div class="labels">
+						<span>Горные замки</span>
+						<span>Горные реки</span>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="gallery-slide" style="background-image: url('./img/g2.jpg');">
+					<div class="labels">
+						<span>Горные замки</span>
+						<span>Горные реки</span>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="gallery-slide" style="background-image: url('./img/g3.jpg');">
+					<div class="labels">
+						<span>Горные замки</span>
+						<span>Горные реки</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="arrows">
+		<button class="prevBtn">
+			<svg width="27" height="12" viewBox="0 0 27 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path fill-rule="evenodd" clip-rule="evenodd" d="M9.33621 1.94575C9.47832 1.84288 9.59231 1.71883 9.67136 1.58099C9.75042 1.44316 9.79293 1.29436 9.79636 1.14349C9.79978 0.992614 9.76406 0.842748 9.69131 0.702831C9.61856 0.562915 9.51028 0.435817 9.37293 0.329115C9.23558 0.222413 9.07197 0.138296 8.89187 0.0817814C8.71176 0.0252666 8.51885 -0.00248718 8.32463 0.000174522C8.13042 0.00283623 7.93889 0.0358601 7.76146 0.0972757C7.58403 0.15869 7.42435 0.247239 7.29193 0.357638L1.02407 5.22686L0 6.02092L1.02214 6.81498L7.29 11.6842C7.56267 11.889 7.92798 12.0024 8.30723 12C8.68648 11.9975 9.04934 11.8795 9.31764 11.6713C9.58595 11.463 9.73824 11.1812 9.74172 10.8866C9.74519 10.592 9.59957 10.3081 9.33621 10.0961L5.53693 7.14459L25.5536 7.14459C25.9372 7.14459 26.3051 7.0262 26.5764 6.81547C26.8476 6.60474 27 6.31893 27 6.02092C27 5.7229 26.8476 5.4371 26.5764 5.22637C26.3051 5.01564 25.9372 4.89725 25.5536 4.89725L5.53693 4.89725L9.33621 1.94575Z" fill="#292128"/>
+			</svg>
+		</button>
+		<button class="nextBtn">
+			<svg width="27" height="12" viewBox="0 0 27 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path fill-rule="evenodd" clip-rule="evenodd" d="M9.33621 1.94575C9.47832 1.84288 9.59231 1.71883 9.67136 1.58099C9.75042 1.44316 9.79293 1.29436 9.79636 1.14349C9.79978 0.992614 9.76406 0.842748 9.69131 0.702831C9.61856 0.562915 9.51028 0.435817 9.37293 0.329115C9.23558 0.222413 9.07197 0.138296 8.89187 0.0817814C8.71176 0.0252666 8.51885 -0.00248718 8.32463 0.000174522C8.13042 0.00283623 7.93889 0.0358601 7.76146 0.0972757C7.58403 0.15869 7.42435 0.247239 7.29193 0.357638L1.02407 5.22686L0 6.02092L1.02214 6.81498L7.29 11.6842C7.56267 11.889 7.92798 12.0024 8.30723 12C8.68648 11.9975 9.04934 11.8795 9.31764 11.6713C9.58595 11.463 9.73824 11.1812 9.74172 10.8866C9.74519 10.592 9.59957 10.3081 9.33621 10.0961L5.53693 7.14459L25.5536 7.14459C25.9372 7.14459 26.3051 7.0262 26.5764 6.81547C26.8476 6.60474 27 6.31893 27 6.02092C27 5.7229 26.8476 5.4371 26.5764 5.22637C26.3051 5.01564 25.9372 4.89725 25.5536 4.89725L5.53693 4.89725L9.33621 1.94575Z" fill="#292128"/>
+			</svg>
+		</button>
+	</div>
+</section>
+
+<section id="submit">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<h2 class="mb-30">Оставить заявку</h2>
+			</div>
+			<div class="col-lg-6 col-sm-6">
+				<h4 class="mb-16"><strong>Незабываемые туры</strong></h4>
+				<p class="small-grey mb-64">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl facilisis integer tortor malesuada nulla risus. Proin dapibus ipsum dictum odio euismod diam quam sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl facilisis integer tortor malesuada nulla risus. Proin dapibus ipsum dictum odio euismod diam quam sem. 
+				</p>
+				<div class="socials d-none d-sm-block">
+					<a href="#1" class="d-flex align-items-center mb-24">
+						<img src="./img/social.svg" class="me-4">
+						<div>
+							<h4 class="mb-0">Instagram</h4>
+							<p class="small-grey mb-0">@dagestannn</p>
+						</div>
+					</a>
+					<a href="#2" class="d-flex align-items-center mb-24">
+						<img src="./img/social.svg" class="me-4">
+						<div>
+							<h4 class="mb-0">Tik Tok</h4>
+							<p class="small-grey mb-0">@dagestannn</p>
+						</div>
+					</a>
+					<a href="#3" class="d-flex align-items-center mb-24">
+						<img src="./img/social.svg" class="me-4">
+						<div>
+							<h4 class="mb-0">Whatsapp</h4>
+							<p class="small-grey mb-0">+7 666 444 3452</p>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-lg-5 offset-lg-1 col-sm-6">
+				<form action="" class="mb-64">
+					<input type="text" placeholder="Имя">
+					<input type="text" placeholder="Email">
+					<input type="text" placeholder="Телефон">
+					<textarea name="" id="" cols="30" rows="10" placeholder="Комментарий"></textarea>
+					<button type="submit" class="submit-btn">Отправить</button>
+				</form>
+
+				<div class="socials d-md-none">
+					<a href="#1" class="d-flex align-items-center mb-24">
+						<img src="./img/social.svg" class="me-4">
+						<div>
+							<h4 class="mb-0">Instagram</h4>
+							<p class="small-grey mb-0">@dagestannn</p>
+						</div>
+					</a>
+					<a href="#2" class="d-flex align-items-center mb-24">
+						<img src="./img/social.svg" class="me-4">
+						<div>
+							<h4 class="mb-0">Tik Tok</h4>
+							<p class="small-grey mb-0">@dagestannn</p>
+						</div>
+					</a>
+					<a href="#3" class="d-flex align-items-center mb-24">
+						<img src="./img/social.svg" class="me-4">
+						<div>
+							<h4 class="mb-0">Whatsapp</h4>
+							<p class="small-grey mb-0">+7 666 444 3452</p>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
 
 <footer>
 	<div class="container">
@@ -164,12 +310,12 @@
 				<ul class="ms-0 justify-content-start header-nav">
 					<li><a href="">Туры</a></li>
 					<li><a href="">О нас</a></li>
-					<li><a href="">Галерея</a></li>
+					<li class="me-0"><a href="">Галерея</a></li>
 				</ul>
 			</div>
 			<div class="col-lg-4 text-center">
 				<a href="" class="logo">
-					<img src="./img/logo.svg" alt="">
+					<img src="./img/logo.svg" class="logo">
 				</a>
 			</div>
 			<div class="col-lg-4">
@@ -206,7 +352,7 @@
 
 <!-- Initialize Swiper -->
   <script>
-  var swiper = new Swiper('.swiper-container', {
+  var swiper = new Swiper('#about .swiper-container', {
       slidesPerView: 1,
       spaceBetween: 0,
       loop: true,
@@ -224,6 +370,29 @@
         },
         1024: {
           slidesPerView: 1
+        },
+      }
+    });
+
+	var swiper2 = new Swiper('#gallery .swiper-container', {
+      slidesPerView: 3.2,
+      spaceBetween: 0,
+      loop: false,
+	  threshold: 50,
+      centeredSlides: false,
+	  navigation: {
+      	nextEl: '.nextBtn',
+      	prevEl: '.prevBtn',
+    	},
+		breakpoints: {
+        320: {
+          slidesPerView: 1
+        },
+        768: {
+          slidesPerView: 2
+        },
+        1024: {
+          slidesPerView: 3.2,
         },
       }
     });

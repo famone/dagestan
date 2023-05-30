@@ -120,7 +120,7 @@ h2{
 	width: 100%;
 }
 .tour-card{
-	margin-bottom: 30px;
+	margin-bottom: 40px;
 }
 .small-txt{
 	font-weight: 400;
@@ -181,7 +181,7 @@ h3{
 .small-grey{
 	font-weight: 400;
 	font-size: 14px;
-	line-height: 20px;
+	line-height: 24px;
 	text-align: justify;
 	color: #727272;
 }
@@ -232,6 +232,170 @@ footer li a{
 	border-radius: 100px;
 	mix-blend-mode: difference;
 }
+.submit-btn{
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 20px;
+	color: #fff;
+	border-radius: 50px;
+	padding: 6px 25px;
+	background-color: transparent;
+	border: 1px #fff solid;
+}
+.submit-btn:hover{
+	background-color: #292128;
+	color: #fff;
+	border-color: #292128;
+}
+
+
+/* gallery */
+#gallery{
+	overflow: hidden;
+	padding-bottom: 200px;
+}
+.gallery-slider{
+	height: 40rem;
+}
+.gallery-slide{
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	transition: all .3s ease;
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: column;
+	padding: 16px;
+}
+.gallery-slide::before{
+	content: '';
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: all .3s ease;
+	background: linear-gradient(180deg, rgba(217, 217, 217, 0) 0%, rgba(0, 0, 0, 0.7) 90.31%);
+}
+.gallery-slide:hover::before{
+	opacity: 0.5;
+}
+.gallery-slide .labels{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	position: relative;
+}
+.labels span{
+	font-size: 12px;
+	line-height: 15px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	padding: 6px 24px;
+	border: 1px #fff solid;
+	border-radius: 100px;
+	margin-right: 16px;
+	cursor: pointer;
+	transition: all .3s ease;
+}
+.labels span:hover{
+	color: #fff;
+	background-color: #292128;
+	border-color: #292128;
+}
+.arrows{
+	display: flex;justify-content: center;align-items: center;
+	margin-top: 32px;
+}
+.prevBtn{
+	height: 62px;
+	width: 62px;
+	border: 2px #292128 solid;
+	border-radius: 100px;
+	background-color: transparent;
+	margin: 0 16px;
+	cursor: pointer;
+}
+.nextBtn{
+	height: 62px;
+	width: 62px;
+	border: 2px #292128 solid;
+	border-radius: 100px;
+	background-color: transparent;
+	transform: rotate(180deg);
+	margin: 0 16px;
+	cursor: pointer;
+}
+.prevBtn:hover{
+	background-color: #292128;
+}
+.nextBtn:hover{
+	background-color: #292128;
+}
+.prevBtn:hover svg path{
+	fill: #fff !important;
+}
+.nextBtn:hover svg path{
+	fill: #fff !important;
+}
+
+/* submit */
+#submit{
+	padding-bottom: 200px;
+}
+input{
+	background: #EDEDED;
+	border-radius: 16px;
+	padding: 16px;
+	font-size: 14px;
+	line-height: 16px;
+	color: #000;
+	border: none;
+	width: 100%;
+	margin-bottom: 24px;
+	display: block;
+	transition: all .3s ease;
+}
+textarea{
+	resize: none;
+	background: #EDEDED;
+	border-radius: 16px;
+	padding: 16px;
+	font-size: 14px;
+	line-height: 16px;
+	color: #000;
+	border: none;
+	width: 100%;
+	margin-bottom: 24px;
+	display: block;
+	transition: all .3s ease;
+}
+.submit-btn{
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+	text-transform: uppercase;
+	border-radius: 50px;
+	padding: 16px 56px;
+	background-color: transparent;
+	background-color: #292128;
+	color: #fff;
+	border-color: #292128;
+}
+.submit-btn:hover{
+	background-color: transparent;
+	color: #292128;
+	border-color: #292128;
+}
+#submit h4 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #000000;
+}
 
 /*ADAPTIIIIIIIIIV*/
 .mb-0{
@@ -246,12 +410,45 @@ footer li a{
 .mb-30{
 	margin-bottom: 32px;
 }
+.mb-64{
+	margin-bottom: 64px;
+}
 
 @media (max-width: 1199px) {
 	
 }
 @media (max-width: 991px) {
-	
+	h1{
+		font-size: 120px;
+		line-height: 146px;
+	}
+	h3{
+		min-height: inherit;
+		font-size: 20px;
+		line-height: 24px;
+	}
+	#tours{
+		padding: 120px 0;
+	}
+	#about, #gallery, #submit{
+		padding-bottom: 120px;
+	}
+	.about-slider{
+		height: 454px;
+		margin-bottom: 24px;
+	}
+	#submit .mb-64{
+		margin-bottom: 24px;
+	}
+	footer{
+		padding: 20px 0;
+	}
+	footer .logo img{
+		margin: 40px 0;
+	}
+	footer .header-nav{
+		justify-content: center !important;
+	}
 }
 @media (max-width: 786px) {
 	
@@ -260,7 +457,52 @@ footer li a{
  	
 }
 @media (max-width: 672px) {
-	
+	#main{
+		height: 80vh;
+	}
+	h1{
+		font-size: 64px;
+		line-height: 68px;
+	}
+	.bottom-descr{
+		align-items: center;
+	}
+	.bottom-descr p{
+		margin-bottom: 0;
+		font-size: 10px;
+		line-height: 12px;
+	}
+	#tours{
+		padding: 94px 0;
+	}
+	h2{
+		font-size: 30px;
+		line-height: 30px;
+	}
+	h3{
+		min-height: inherit;
+		font-size: 16px;
+		line-height: 20px;	
+	}
+	.about-slider{
+		height: 300px;
+		margin-bottom: 16px;
+	}
+	#about, #gallery, #submit{
+		padding-bottom: 94px;
+	}
+	.gallery-slider{
+		height: 320px;
+	}
+	footer{
+		padding: 20px 0;
+	}
+	footer .logo img{
+		margin: 40px 0;
+	}
+	footer .header-nav{
+		justify-content: center !important;
+	}
 }
 @media (max-width: 512px) {
 	
