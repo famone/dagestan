@@ -1,9 +1,6 @@
 // CARDS EVENTS
 
 const tour_card = document.querySelectorAll('.tour-card');
-
-console.log(tour_card)
-
 tour_card.forEach((item) => {
     const more_btn = item.querySelector('.more');
     const text = item.querySelector('.small-txt');
@@ -19,6 +16,18 @@ tour_card.forEach((item) => {
     })
 })
 
+// BURGER
+const burger_btn = document.querySelector('.burger')
+const burger_menu = document.querySelector('.burger-menu')
+const close_menu = document.querySelector('.close-menu')
+
+burger_btn.addEventListener('click', function(){
+    burger_menu.classList.toggle('active')
+})
+
+close_menu.addEventListener('click', function(){
+    burger_menu.classList.toggle('active')
+})
 // CUSTOM CURSOR
 
 // let clientX = -100;
