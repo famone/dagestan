@@ -311,6 +311,7 @@ footer li a{
 	justify-content: flex-start;
 	align-items: center;
 	position: relative;
+	flex-wrap: wrap;
 }
 .labels span{
 	font-size: 12px;
@@ -321,6 +322,7 @@ footer li a{
 	border: 1px #fff solid;
 	border-radius: 100px;
 	margin-right: 16px;
+	margin-bottom: 16px;
 	cursor: pointer;
 	transition: all .3s ease;
 }
@@ -341,9 +343,15 @@ footer li a{
 	background-color: transparent;
 	margin: 0 16px;
 	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .nextBtn{
 	height: 62px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 62px;
 	border: 2px #292128 solid;
 	border-radius: 100px;
@@ -463,6 +471,32 @@ textarea{
 }
 .close-menu img{
 	height: 24px;
+}
+
+.socials a:hover .social-arr{
+	background-color: #292128;
+}
+.socials a:hover svg path{
+	fill: #fff !important;
+}
+.social-arr{
+	height: 62px;
+	width: 62px;
+	border: 2px #292128 solid;
+	border-radius: 100px;
+	background-color: transparent;
+	transform: rotate(180deg);
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all .3s ease;
+}
+.social-arr:hover{
+	background-color: #292128;
+}
+.social-arr:hover svg path{
+	fill: #fff !important;
 }
 
 /*ADAPTIIIIIIIIIV*/

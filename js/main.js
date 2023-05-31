@@ -20,12 +20,21 @@ tour_card.forEach((item) => {
 const burger_btn = document.querySelector('.burger')
 const burger_menu = document.querySelector('.burger-menu')
 const close_menu = document.querySelector('.close-menu')
+const burger_order = burger_menu.querySelector('.order-btn')
+const burger_ul = burger_menu.querySelector('ul')
 
 burger_btn.addEventListener('click', function(){
     burger_menu.classList.toggle('active')
 })
 
 close_menu.addEventListener('click', function(){
+    burger_menu.classList.toggle('active')
+})
+
+burger_order.addEventListener('click', function(){
+    burger_menu.classList.toggle('active')
+})
+burger_ul.addEventListener('click', function(){
     burger_menu.classList.toggle('active')
 })
 // CUSTOM CURSOR
