@@ -6,17 +6,21 @@ body{
 *{
 	box-sizing: border-box;
 }
-
 /* main */
 #main{
 	height: 900px;
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-image: url('../img/main.jpg');
 	position: relative;
 	padding-bottom: 22px;
 	background-attachment: fixed;
+	overflow: hidden;
+}
+#scene{
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
 }
 #main::before{
 	content: '';
@@ -26,6 +30,19 @@ body{
 	top: 0;
 	left: 0;
 	background: rgba(0, 0, 0, 0.8);
+}
+.main-image{
+	height: 130%;
+	width: 130%;
+	position: absolute;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-image: url('../img/main.jpg');
+	z-index: -1;
+	margin-top: -10%;
+	margin-left: -10%;
 }
 #main .container, #main .row{
 	height: 100%;
@@ -108,6 +125,8 @@ header{
 /* tours */
 #tours{
 	padding: 180px 0;
+	position: relative;
+	background-color: #fff;
 }
 h2{
 	font-weight: 600;
@@ -167,6 +186,8 @@ h3{
 /* about */
 #about{
 	padding-bottom: 200px;
+	position: relative;
+	background-color: #fff;
 }
 #about h3{
 	min-height: inherit;
@@ -207,6 +228,7 @@ h3{
 
 footer{
 	background: #292128;
+	position: relative;
 	padding: 70px 0;
 }
 footer li a{
@@ -253,6 +275,8 @@ footer li a{
 #gallery{
 	overflow: hidden;
 	padding-bottom: 200px;
+	position: relative;
+	background-color: #fff;
 }
 .gallery-slider{
 	height: 40rem;
@@ -344,6 +368,8 @@ footer li a{
 /* submit */
 #submit{
 	padding-bottom: 200px;
+	position: relative;
+	background-color: #fff;
 }
 input{
 	background: #EDEDED;
