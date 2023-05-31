@@ -423,6 +423,23 @@ textarea{
 	color: #292128;
 	border-color: #292128;
 }
+.load-more{
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+	text-transform: uppercase;
+	border-radius: 50px;
+	padding: 16px 56px;
+	background-color: transparent;
+	background-color: #292128;
+	color: #fff;
+	border-color: #292128;
+}
+.load-more:hover{
+	background-color:#C1B3A1;
+	border-color: #C1B3A1;
+	color: #000;
+}
 #submit h4 {
     font-weight: 700;
     font-size: 20px;
