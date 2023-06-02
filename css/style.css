@@ -6,6 +6,12 @@ body{
 *{
 	box-sizing: border-box;
 }
+.scroll-tracker{
+	height: 0.5rem;
+	background:#C1B3A1;
+	position: fixed;
+	inset: 0 0 auto;
+}
 /* main */
 #main{
 	height: 900px;
