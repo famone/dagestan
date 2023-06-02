@@ -37,6 +37,30 @@ burger_order.addEventListener('click', function(){
 burger_ul.addEventListener('click', function(){
     burger_menu.classList.toggle('active')
 })
+
+// ADD MORE TOURS FOR VIEW
+
+const add_more_btn = document.querySelector('.load-more')
+const tours_array = document.querySelector('.tours-array')
+
+add_more_btn.addEventListener('click', function(){
+    const new_tour = document.createElement('div')
+    new_tour.className = 'col-lg-4 col-sm-6'
+    new_tour.innerHTML = `<div class="tour-card">
+                            <img class="w-100 mb-16" src="./img/Rectangle1.jpg" alt="">
+                            <h3>Тур с местным гидом-водителем</h3>
+                            <p class="small-txt mb-16 collapsed">
+                                Тур с местным гидом-водителем. Тур с местным гидом-водителем. Pulvinar magna purus semper id est lacus. Aenean morbi at eros curabitur volutpat. Тур с местным гидом-водителем. Pulvinar magna purus semper id est lacus. Aenean morbi at eros curabitur volutpat. Maecenas commodo integer massa ac ornare sed dui. Nunc suspendisse urna, lorem pharetra, sit. Aenean morbi at eros curabitur volutpat. Maecenas commodo integer massa ac ornare sed dui. Nunc suspendisse urna, lorem pharetra, sit. Aenean morbi at eros curabitur volutpat. Maecenas commodo integer massa ac ornare sed dui. Nunc suspendisse urna, lorem pharetra, sit. Aenean morbi at eros curabitur volutpat. Maecenas commodo integer massa ac ornare sed dui. Nunc suspendisse urna, lorem pharetra, sit.
+                            </p>
+                            <div class="d-flex">
+                                <button class="order-btn me-2 more">Подробнее</button>
+                                <a href="#submit"><button class="order-btn">Заказать тур</button></a>
+                            </div>
+                        </div>`
+    tours_array.appendChild(new_tour)
+})
+
+
 // CUSTOM CURSOR
 
 // let clientX = -100;
