@@ -59,8 +59,6 @@ add_more_btn.addEventListener('click', function(){
                         </div>`
     tours_array.appendChild(new_tour)
 })
-
-
 // CUSTOM CURSOR
 
 // let clientX = -100;
