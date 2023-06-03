@@ -7,10 +7,12 @@ body{
 	box-sizing: border-box;
 }
 .scroll-tracker{
-	height: 0.5rem;
+	z-index: 20;
+	height: 0.2rem;
 	background:#C1B3A1;
 	position: fixed;
 	inset: 0 0 auto;
+	transform-origin: left;
 }
 /* main */
 #main{
@@ -587,6 +589,10 @@ textarea{
 @media (max-width: 672px) {
 	#main{
 		height: 80vh;
+		background-attachment:scroll;
+	}
+	.main-image{
+		background-attachment:scroll;
 	}
 	h1{
 		font-size: 64px;

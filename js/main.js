@@ -1,5 +1,18 @@
-// CARDS EVENTS
+import 'https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js';
 
+document.querySelector('.scroll-tracker').animate(
+    { transform: ['scaleX(0)', 'scaleX(1)']},
+    { duration: 1, // Totally arbitrary!
+      fill: 'both',
+      timeline: new ScrollTimeline({
+          scrollOffsets: [
+            CSS.percent(0),
+            CSS.percent(100)
+          ]
+      })
+    });
+
+// CARDS EVENTS
 const tour_card = document.querySelectorAll('.tour-card');
 tour_card.forEach((item) => {
     const more_btn = item.querySelector('.more');
@@ -59,31 +72,3 @@ add_more_btn.addEventListener('click', function(){
                         </div>`
     tours_array.appendChild(new_tour)
 })
-// CUSTOM CURSOR
-
-// let clientX = -100;
-// let clientY = -100;
-// var innerCursor = document.querySelector(".cursor");
-
-// const initCursor = ()=>{
-//     document.addEventListener("mousemove", cursor);
-// }
-
-// const disableCursor = ()=>{
-//     document.removeEventListener("mousemove", cursor);
-// }
-
-// function cursor(e) {
-//     clientX = e.clientX;
-//     clientY = e.clientY;
-// }
-// const render = ()=>{
-
-//     innerCursor.style.top = clientY + 'px';
-//     innerCursor.style.left = clientX + 'px';
-
-//     requestAnimationFrame(render);
-// };
-
-// initCursor();
-// requestAnimationFrame(render);
